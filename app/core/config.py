@@ -1,5 +1,15 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import List
+from pydantic import AnyHttpUrl
+
+
+BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:3001",
+    "https://note-frontend-livid.vercel.app",
+]
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Notes API"
@@ -30,8 +40,7 @@ class Settings(BaseSettings):
         return f"postgresql+psycopg://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
 
     # CORS
-    from pydantic import AnyHttpUrl
-from typing import List
+
 
 BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = [
     "http://localhost:3000",
