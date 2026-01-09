@@ -123,6 +123,6 @@ pytest tests/test_api.py
 ## 📞 Support & Repository Access
 
 Grant repository access to:
-- `jmrpatel257@gmail.com`
-- `shubhammishralpu@gmail.com`
-- GitHub Id: `rabbit-ninja`
+- `gowthammkumar754@gmail.com`
+- `9074616341`
+
