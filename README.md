@@ -1,5 +1,17 @@
 # Notes API with Version History
 
+
+## 🌐 Live Demo
+
+### Frontend (Next.js – Vercel)
+🔗 https://note-frontend-livid.vercel.app
+
+### Backend (FastAPI – Render)
+🔗 https://notes-fast-api.onrender.com
+
+### API Documentation (Swagger UI)
+📄 https://notes-fast-api.onrender.com/docs
+
 A robust FastAPI backend for taking notes with automatic version snapshots on every update. Includes a full-featured authentication system and a Next.js frontend.
 
 ## 🚀 Features
