@@ -30,13 +30,16 @@ class Settings(BaseSettings):
         return f"postgresql+psycopg://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
 
     # CORS
-    BACKEND_CORS_ORIGINS: List[str] = [
-        "http://localhost:3000", 
-        "http://localhost:3001",
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:3001",
-        "https://note-frontend-livid.vercel.app"
-    ]
+    from pydantic import AnyHttpUrl
+from typing import List
+
+BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:3001",
+    "https://note-frontend-livid.vercel.app",
+]
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
