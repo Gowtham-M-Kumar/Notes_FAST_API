@@ -101,10 +101,6 @@ pytest tests/test_api.py
 - **Redoc**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 - **Postman Collection**: `Notes_API.postman_collection.json` (See root directory)
 
-## 🌐 Deployment
-
-- **Backend Hosted on**: Railway (PostgreSQL)
-- **Deployment URL**: [Your Live API URL Here]
 
 ## 🤝 Project Deliverables Checklist
 
