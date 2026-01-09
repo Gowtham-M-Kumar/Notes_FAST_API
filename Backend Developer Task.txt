@@ -1,0 +1,112 @@
+Backend Developer Task
+Project Title: Notes API with Version History
+
+Objective
+Design and implement a FastAPI-based backend for a note-taking application with
+version history.
+The goal of this task is to assess your ability to:
+●​ Architect a clean and scalable backend system.​
+●​ Implement robust data modeling and schema design using PostgreSQL.​
+●​ Handle version control logic for notes efficiently.​
+●​ Document and test APIs with Postman.​
+●​ Deploy and manage a production-ready backend service.​
+
+This is an individual task and should be completed within 7 Days.
+
+Core Requirements
+1. Framework and Tools
+●​ FastAPI (mandatory) for building all endpoints.​
+●​ PostgreSQL (mandatory) as the primary database.​
+●​ SQLAlchemy ORM for database interaction.​
+●​ Alembic for database migrations.​
+●​ Pydantic for schema validation and data serialization.​
+
+2. Core Functionalities
+a. User and Authentication
+●​ Implement user registration and login.​
+●​ Use JWT authentication for secure access to APIs.​
+●​ Store passwords securely (hashed).​
+
+b. Notes Management
+●​ CRUD endpoints for notes:​
+○​ Create a note.​
+○​ Update note title/content.​
+○​ Delete a note.​
+○​ Fetch a single note or all notes belonging to a user.​
+●​ Each note should include:​
+○​ id, title, content, owner_id, created_at, updated_at.​
+
+c. Version History
+●​ Every time a note is updated, a new version should be stored automatically.​
+●​ Each version must contain:​
+○​ Note ID, version number, content snapshot, editor (user_id), and timestamp.​
+●​ Provide endpoints for:​
+○​ Listing all versions of a note.​
+○​ Fetching a specific version.​
+○​ Restoring a note to a previous version.​
+
+d. Validation and Error Handling
+●​ Apply schema validation to all inputs using Pydantic.​
+
+●​ Return descriptive and consistent error messages.​
+●​ Include appropriate HTTP status codes for each response.
+
+e. Testing
+●​ Include pytest tests for critical endpoints.​
+●​ Cover CRUD operations, authentication, and version history retrieval.​
+●​ Tests should validate status codes, data correctness, and authorization checks.​
+
+3. Postman Documentation (Mandatory)
+●​ Include a Postman collection covering all endpoints.​
+●​ Each request must include:​
+○​ Example input and output.​
+○​ Auth token (for protected routes).​
+○​ Descriptive request/response bodies.​
+○​ Predefined Postman test scripts for validating key responses (e.g., status
+= 200, correct data fields).​
+●​ The collection should be easily importable and executable.
+●​ Give access to the jmrpatel257@gmail.com and shubhammishralpu@gmail.com.​
+
+4. Optional Enhancements (Bonus but appreciated)
+●​ Frontend: Add a simple frontend to integrate all or partial APIs in NextJS.
+●​ Collaborators: Allow multiple users to share and edit notes.
+●​ Search and Filtering: Add endpoints for searching notes by title or content.
+●​ Activity Logs: Track note access or edit actions.​
+
+Deployment
+1. Hosting
+Deploy your backend on one of the following services:
+●​ Render, Railway, Fly.io, or Azure App Service.​
+
+2. Database
+Host your PostgreSQL instance using:
+●​ Neon, Supabase, or any of the free platforms of your choice.​
+
+3. Deliverables
+●​ The deployed backend should be live and publicly accessible.​
+●​ The Postman collection should point to the live API.​
+
+Deliverables Checklist
+1.​ Private GitHub Repository containing:​
+○​ Complete source code with modular structure.​
+○​ Alembic migration scripts.​
+○​ Postman collection (with examples and tests).​
+○​ README including:​
+■​ Setup and run instructions (local + production).​
+■​ Environment variables.​
+■​ API documentation summary.​
+■​ Deployment URL.​
+
+2.​ Access: Grant repository access to​
+jmrpatel257@gmail.com and Github Id: rabbit-ninja.​
+3.​ Deadline: 7 days from the date of receiving the task.​
+
+Evaluation Criteria
+●​ Code Quality & Architecture
+●​ Database Design
+●​ Version History
+Implementation
+●​ Documentation & Testing
+●​ Deployment
+●​ Bonus Points
+
